@@ -1,0 +1,31 @@
+{/* <li className="adjustments-line">
+  <div className="badge-colors text-center">
+    <Badge
+      color="primary"
+      className={
+        props.bgColor === backgroundColors.primary ? "active" : ""
+      }
+      onClick={() => {
+        props.handleBgClick(backgroundColors.primary);
+      }}
+    />{" "}
+    <Badge
+      color="info"
+      className={
+        props.bgColor === backgroundColors.blue ? "active" : ""
+      }
+      onClick={() => {
+        props.handleBgClick(backgroundColors.blue);
+      }}
+    />{" "}
+    <Badge
+      color="success"
+      className={
+        props.bgColor === backgroundColors.green ? "active" : ""
+      }
+      onClick={() => {
+        props.handleBgClick(backgroundColors.green);
+      }}
+    />{" "}
+  </div>
+</li> */}
