@@ -25,6 +25,7 @@ import AdminNavbar from "../../components/Navbars/AdminNavbar.js";
 import Footer from "../../components/Footer/Footer.js";
 import Sidebar from "../../components/Sidebar/Sidebar.js";
 import FixedPlugin from "../../components/FixedPlugin/FixedPlugin.js";
+import FixedButton from "../../components/FixedPlugin/FixedButton.js";
 
 import routes from "../../routes.js";
 
@@ -129,6 +130,7 @@ function Admin(props) {
             </div>
           </div>
           <FixedPlugin bgColor={color} handleBgClick={changeColor} />
+          <FixedButton icon="fa fa-plus" />
         </>
       )}
     </BackgroundColorContext.Consumer>

@@ -1,12 +1,13 @@
 /* eslint react/no-multi-comp: 0, react/prop-types: 0 */
 
 import React, { useState } from 'react';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter, FormGroup, Label, Input } from 'reactstrap';
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 
 const ModalExample = (props) => {
     const {
         buttonLabel,
+        modalClassName,
         className,
         title,
         content
@@ -25,14 +26,14 @@ const ModalExample = (props) => {
     return (
         <div>
             <Button color="warning" onClick={toggle}>{buttonLabel}</Button>
-            <Modal size="lg" unmountOnClose={unmountOnClose} isOpen={modal} toggle={toggle} className={className}>
-                <ModalHeader toggle={toggle}>{title}</ModalHeader>
+            <Modal modalClassName={modalClassName} size="lg" unmountOnClose={unmountOnClose} isOpen={modal} toggle={toggle} className={className}>
+                <ModalHeader toggle={toggle}><h4>{title}</h4></ModalHeader>
                 <ModalBody>
                     {content}
                 </ModalBody>
                 <ModalFooter className="pb-3">
-                    <Button className="mx-auto" color="success" onClick={toggle}>Do Something</Button>{' '}
-                    <Button className="mx-auto" onClick={toggle} >Cancel</Button>
+                    <Button className="mx-auto" color="success" onClick={toggle}>Aceptar</Button>{' '}
+                    <Button className="mx-auto" color="danger" onClick={toggle} >Cancelar</Button>
                 </ModalFooter>
             </Modal>
         </div>
